@@ -12,13 +12,27 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <pi4j.version>1.1</pi4j.version>
+        <bluecove.version>2.1.0</bluecove.version>
     </properties>
 
     <dependencies>
+        <!--<dependency>-->
+            <!--<groupId>com.pi4j</groupId>-->
+            <!--<artifactId>pi4j-core</artifactId>-->
+            <!--<version>${pi4j.version}</version>-->
+        <!--</dependency>-->
+
         <dependency>
-            <groupId>com.pi4j</groupId>
-            <artifactId>pi4j-core</artifactId>
-            <version>${pi4j.version}</version>
+            <groupId>net.sf.bluecove</groupId>
+            <artifactId>bluecove</artifactId>
+            <version>${bluecove.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.bluecove</groupId>
+            <artifactId>bluecove-gpl</artifactId>
+            <version>${bluecove.version}</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
